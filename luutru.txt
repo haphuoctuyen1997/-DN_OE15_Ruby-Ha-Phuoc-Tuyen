@@ -1,1 +1,38 @@
-lưu tru
+ NHỮNG ĐIỀU CẦN GHI NHỚ TRONG GIT!
+
+Git: 
+git là một hệ thống quản lý phiên bản phân tán, quản lý sourcode .
+cấu hình : git config
+git help config
+cau hinh ten nguoi dung va mat khau
+git config --global user.name = "name"
+git config --global user.email = "email"
+khởi tạo git trong thư mục lư trử git: git init
+xem trang thai :git status (hoặc git diff)
+add: git add "tenfile"
+ 1) add all: git add . hoac git add *
+ 2) comit: git commit -m "Nội dung"
+=> git commit -a -m "exx"  (vua add vua commit)
+lich su comit: git log
+chinh sua commit: git revert idcommit  
+upload sever: git remote add <name> <url>
+git push <name>
+git push -- set-upstream <name> master
+
+dowload project: git clone <url>
+(file đả được chỉnh sửa , add lại file, commit file,kiểm tra status , và đẩy lên bằng git push)
+
+
+sử dụng git init để khởi tạo git trong thư mục lư trử git 
+di chuyen vao thu muc git : cd RubyGit/
+tạo thu muc: gedit hello.txt 
+kiểm tra trạng thái : git status 
+Thêm vào chỉ mục ở trên Git: git add tênfile (có thể thêm thu mục hoặc chỉ một file bất kì sữ dụng git add * để add tất cả.)
+Tiếp đến, để thực hiện đánh dấu phiên bản ta sử dụng lệnh:git commit -m <Nội dung>
+để xóa têp:để xóa tệp ta dùng lệnh: rm tệp ,để bỏ theo dỏi tẹp và laoi bỏ việc xóa bằng lệnh :git rm.
+-Sao chép một kho lưu trữ tại github:Để thực hiện việc tải và sao chép một kho lưu trử từ kho lưu trữ ta sử dụng lệnh :
+git clone <url>.
+chỉ định tên thư mục tải về
+git clone https://github.com/libgit2/libgit2 tenthumuctaive
+kết nối tới githup: git remote add <tên> <url>
+để đẩy lên kho chứa loca : git push <tên> <nhánh>
